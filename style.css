@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.jumbotron.jumbotron-fluid.text-center label {
+	top: 52px;
+	right: 54px;
+	padding-right: 17px;
+	margin-top: 25px;
+	padding-top: 0px;
+	bottom: 27px;
+	left: -3px;
+	margin-right: 1px;
+}
+.jumbotron.jumbotron-fluid.text-center #textfield {
+	right: 19px;
+	top: 25px;
+	left: 29px;
+	padding-top: 2px;
+	padding-right: 96px;
+}
+.jumbotron.jumbotron-fluid.text-center div #textfield2 {
+	padding-top: 3px;
+	padding-right: 94px;
+	right: -2px;
+	left: 7px;
+	margin-right: -5px;
+	text-shadow: 0px 0px #3700F8;
+}
+.jumbotron.jumbotron-fluid.text-center #submit {
+	right: 26px;
+	margin-right: -91px;
+	margin-bottom: 3px;
+	margin-top: 27px;
+}
+#form1 div .Submit {
+}
