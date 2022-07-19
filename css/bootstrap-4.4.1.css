@@ -569,7 +569,7 @@ pre code {
 .navbar.navbar-expand-lg.navbar-dark.bg-dark {
 	margin-top: -2px;
 	margin-left: 2px;
-	background-color: #FFFFFF;
+	background-color: #000000;
 	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
 	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
 	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
@@ -577,6 +577,7 @@ pre code {
 }
 .navbar.navbar-expand-lg.navbar-dark.bg-dark .navbar-brand strong {
 	color: #000000;
+	background-color: #FFFFFF;
 }
 .nav-item.active .nav-link strong {
 	color: #000000;
