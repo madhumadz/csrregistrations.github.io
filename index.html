@@ -8,9 +8,31 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
   </head>
-  <body>
+  <body onLoad="MM_preloadImages('512.jpg')">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
        <a class="navbar-brand" href="index.html"><strong>Home</strong></a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +54,7 @@
     </nav>
 
     <div class="jumbotron jumbotron-fluid text-center"> <img src="images/WhatsApp Image 2022-07-16 at 10.58.33 AM.jpeg" class="rounded img-fluid" alt="Placeholder image">    </div>
+<strong><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','512.jpg',1)"></a></strong>
     <div class="container"> <br>
        <hr>
        <br>
@@ -41,7 +64,7 @@
                 <img class="card-img-top" src="images/WhatsApp Image 2022-07-18 at 10.47.50 AM.jpeg" alt="Card image cap">
                 <div class="card-body">
                    <h4 class="card-title">Why CSR</h4>
-                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content jehfbehffjjef efjhbef kjflje jbf ljjfbkjbekfjbekjfbejbfjbfkjblkfjbjbfkjebfkjebfjbejfbejbfejbkjebfkjebfkjbefjbekjfbekjbflekjblkejblkejbljeblekjfblejbelfkjblekjbfljbeljfjebf.</p>
                    <br><br>
                    <a href="Register.html" class="btn btn-primary">REGISTER</a>
                 </div>
@@ -74,13 +97,13 @@
                 <img class="card-img-top" src="images/WhatsApp Image 2022-07-16 at 11.11.09 AM.jpeg" alt="Card image cap">
                 <div class="card-body">
                    <h5 class="card-title">CSR Benefits</h5>
-                   <p class="card-text">Are you a student who wish to get trained under CSR?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                   <p class="card-text">Are you a student who wish to get trained under CSR&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                 </div>
                 <ul class="list-group list-group-flush">
                    <li class="list-group-item">Register for Free&nbsp;</li>
                    <li class="list-group-item">Attend Pre Placement Talk&nbsp;</li>
                    <li class="list-group-item">Attend Online Test Assessment&nbsp;</li>
-                   <li class="list-group-item">Gain Cut off Marks and be eligible for free training&nbsp; &nbsp;</li>
+                   <li class="list-group-item col-lg-12">Score the Cut off marks</li>
                 </ul>
 </div>
           </div>
@@ -93,18 +116,18 @@
           <div class="col-md-6 text-center">
              <div class="card">
                 <div class="card-body">
-                   <h3>Adding <strong>Buttons</strong></h3>
-                   <p>Quickly add buttons to your page by using the button component in the insert panel. </p>
-                   <button type="button" class="btn btn-info btn-md">Info Button</button>
-                   <button type="button" class="btn btn-success btn-md">Success Button</button>
+                   <h3>Placement Drives</h3>
+                   <p>Come Dive in to the oceans of Placements Opportunites at Pentagon Space.&nbsp; &nbsp;&nbsp; </p>
+                   <button type="button" class="btn btn-info btn-md">Drive Details&nbsp;</button>
+                   <button type="button" class="btn btn-success btn-md">Success Stories</button>
                 </div>
              </div>
           </div>
           <div class="text-center col-md-6">
              <div class="card">
                 <div class="card-body">
-                   <h3>Adding <strong>Badges</strong></h3>
-                   <p>Using the insert panel, add badge to your page by using the badge component.</p>
+                   <h3>Adding Badges to Your Career</h3>
+                   <p>Rate your self for technical skills that you possess and get to know your employability growth.</p>
                    <span class="badge badge-info">Info Badge</span> <span class="badge badge-danger">Danger Badge</span>
                 </div>
              </div>
@@ -113,9 +136,9 @@
        <br>
        <hr>
        <div class="row">
-          <div class="text-center col-lg-6 offset-lg-3">
+          <div class="text-center offset-lg-3 col-lg-7">
              <h4>Footer </h4>
-             <p>Copyright &copy; 2021 &middot; All Rights Reserved &middot; <a href="#" >My Website</a></p>
+             <p>Copyright &copy; 2022 &middot; All Rights Reserved Pentagon Space Pvt Ltd&nbsp; <a href="#" >&nbsp;</a></p>
           </div>
        </div>
     </div>
