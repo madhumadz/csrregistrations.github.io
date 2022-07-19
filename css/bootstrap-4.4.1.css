@@ -558,13 +558,15 @@ pre code {
   margin-left: auto;
 }
 .jumbotron.jumbotron-fluid.text-center .rounded.img-fluid {
-	margin-top: -62px;
+	margin-top: 17px;
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
 	padding-top: 0px;
 }
 .jumbotron.jumbotron-fluid.text-center .container {
+	margin-top: 0px;
+	padding-top: 0px;
 }
 .navbar.navbar-expand-lg.navbar-dark.bg-dark {
 	margin-top: -2px;
