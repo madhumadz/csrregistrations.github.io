@@ -558,7 +558,7 @@ pre code {
   margin-left: auto;
 }
 .jumbotron.jumbotron-fluid.text-center .rounded.img-fluid {
-	margin-top: -65px;
+	margin-top: -55px;
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
@@ -569,7 +569,7 @@ pre code {
 .navbar.navbar-expand-lg.navbar-dark.bg-dark {
 	margin-top: -2px;
 	margin-left: 2px;
-	background-color: #000000;
+	background-color: #151515;
 	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
 	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
 	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 100%);
@@ -611,11 +611,12 @@ pre code {
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+	width: 100%;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
 }
 
 @media (min-width: 576px) {
