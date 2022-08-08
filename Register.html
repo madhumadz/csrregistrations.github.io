@@ -37,7 +37,7 @@
 <label for="textfield2">Mail id:</label>
 <input type="text" name="Email" id="textfield2" placeholder="Mail id" value="" required=""/>
 	
-<input type="submit" name="submit" id="submit" value="Login"/>
+<input type="submit" name="submit" id="submit" value="Submit"/>
 	</form>
 	<script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbynOkEGoJZeYK0mACOeSCpVSBG9opRNxmMeZPkjn48a5V5rYcGbs5NsALNJpqBEfVY/exec'
@@ -46,7 +46,7 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Registration Successfully Completed..! Further information will be shared to your registered mail. Click on placement statistics to know more"))
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
