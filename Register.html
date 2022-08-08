@@ -37,6 +37,17 @@
 <label for="textfield2">Mail id:</label>
 <input type="email" name="Email" id="textfield2" placeholder="Mail id" value="" required=""/>
 	
+<label for="textfield3">Mobile Number:</label>
+<input type="text" name="Number" id="textfield3" placeholder="Mobile number" value="" required="" title="Mobile number should be 10 digits" pattern="[1-9]{1}[0-9]{9}"/>
+	
+	Select State: <select name="State" id="textfield4"/>
+    <option value="" selected="selected">Select state</option>
+  </select>
+	
+	Select Your College: <select name="College name" id="textfield5"/>
+    <option value="" selected="selected">Select college name</option>
+  </select>
+	
 <input type="submit" name="submit" id="submit" value="Submit"/>
 	</form>
 	<script>
@@ -48,7 +59,16 @@
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("Registration Successfully Completed..! Further information will be shared to your registered mail. Click on placement statistics to know more"))
                 .catch(error => console.error('Error!', error.message))
+				textfield.value='';
+				textfield2.value='';
+				textfield3.value='';
+				
+
             })
+		
+		
+		
+		
           </script>
 	
 <script src="js/jquery-3.4.1.min.js"></script>
