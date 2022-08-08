@@ -30,20 +30,20 @@
 
 <form method="post" autocomplete="off" name="google-sheet">
   Content for form Goes Here
-</form>
+
 <label for="textfield">Name:</label>
 <input type="text" name="Name" id="textfield" placeholder="Your Name" value="" required=""/>
 	
 <label for="textfield2">Mail id:</label>
 <input type="text" name="Email" id="textfield2" placeholder="Mail id" value="" required=""/>
 	
-<input type="submit" name="submit" id="submit" value="Submit">
-	
+<input type="submit" name="submit" id="submit" value="Login"/>
+	</form>
 	<script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbynOkEGoJZeYK0mACOeSCpVSBG9opRNxmMeZPkjn48a5V5rYcGbs5NsALNJpqBEfVY/exec'
             const form = document.forms['google-sheet']
           
-            form.addEventListener('Submit', e => {
+            form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
