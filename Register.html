@@ -40,17 +40,65 @@
 <label for="textfield3">Mobile Number:</label>
 <input type="text" name="Number" id="textfield3" placeholder="Mobile number" value="" required="" title="Mobile number should be 10 digits" pattern="[1-9]{1}[0-9]{9}"/>
 	
-	Select State: <select name="State" id="textfield4"/>
+	 Select State: <select name="State" id="textfield4" required="">
     <option value="" selected="selected">Select state</option>
-  </select>
+	</select>
+
+	Select District: <select name="District" id="textfield5" required="">
+    <option value="" selected="selected">Select district</option>
+	</select>
 	
-	Select Your College: <select name="College name" id="textfield5"/>
+	
+	Select Your College: <select name="College" id="textfield6" required="">
     <option value="" selected="selected">Select college name</option>
-  </select>
+
+	</select>
 	
 <input type="submit" name="submit" id="submit" value="Submit"/>
 	</form>
 	<script>
+		
+		var stateObject = {
+  "Karnataka": {
+    "Mysore": ["GSSS", "ATME", "MIT", "MITT"],
+    "Tumkur": ["SIT", "HMIT", "CIT", "SSIT"],
+    
+  },
+  "Andra Pradesh": {
+    "Guntur": ["Variables", "Strings", "Arrays"],
+    "Vijayawada": ["SELECT", "UPDATE", "DELETE"]
+  }
+}
+window.onload = function() {
+  var stateSel = document.getElementById("textfield4");
+  var districtSel = document.getElementById("textfield5");
+  var collegeSel = document.getElementById("textfield6");
+  for (var x in stateObject) {
+    stateSel.options[stateSel.options.length] = new Option(x, x);
+  }
+  stateSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    collegeSel.length = 1;
+    districtSel.length = 1;
+    //display correct values
+    for (var y in stateObject[this.value]) {
+      districtSel.options[districtSel.options.length] = new Option(y, y);
+    }
+  }
+  districtSel.onchange = function() {
+    //empty Chapters dropdown
+    collegeSel.length = 1;
+    //display correct values
+    var z = stateObject[stateSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      collegeSel.options[collegeSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+
+		
+		
+		
             const scriptURL = 'https://script.google.com/macros/s/AKfycbynOkEGoJZeYK0mACOeSCpVSBG9opRNxmMeZPkjn48a5V5rYcGbs5NsALNJpqBEfVY/exec'
             const form = document.forms['google-sheet']
           
@@ -62,8 +110,9 @@
 				textfield.value='';
 				textfield2.value='';
 				textfield3.value='';
-				
-
+				textfield4.value='';
+				textfield5.value='';
+		        textfield6.value='';
             })
 		
 		
